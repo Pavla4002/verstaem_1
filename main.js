@@ -37,12 +37,5 @@ function setSlideBanner(){
         document.getElementById('slide-' + currentSlide).classList.remove('hidden-slide');
     }
 
-
-
 }
-
-
-
-
-
 setInterval(setSlideBanner, 3000, )

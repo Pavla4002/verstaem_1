@@ -114,6 +114,14 @@ body {
     }
 }
 
+.section-title {
+    text-align: center;
+
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
 .btn-base-size {
     padding: 10px 20px;
 
@@ -148,6 +156,17 @@ body {
     padding: 0 144px;
 }
 
+.small-gray-text {
+    margin-top: var(--space-16);
+
+
+    font-size: 16px;
+
+
+    color: var(--l-grey-color);
+}
+
+
 .banner-section {
     height: 600px;
 
@@ -173,17 +192,6 @@ body {
         color: var(--primary-color);
        }
     }
-
-    .small-text-banner {
-        margin-top: var(--space-16);
-
-
-        font-size: 16px;
-
-        
-        color: var(--l-grey-color);
-    }
-
 
     & button {
         margin-top: var(--btn-top-s);
@@ -223,3 +231,16 @@ body {
 
 }
 
+#second-section {
+    padding: var(--section-top-s) var(--big-main-space) 0 var(--big-main-space);
+
+
+    .row-imgs {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(6, 48px);
+        justify-content: space-between;
+        padding-top: var(--section-top-s);
+    }
+}
