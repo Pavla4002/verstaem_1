@@ -122,6 +122,16 @@ body {
     font-weight: bold;
 }
 
+.box-title-section {
+    width: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .btn-base-size {
     padding: 10px 20px;
 
@@ -243,4 +253,10 @@ body {
         justify-content: space-between;
         padding-top: var(--section-top-s);
     }
+}
+
+#section-3 {
+    padding: var(--section-top-s) var(--big-main-space) 0 var(--big-main-space);
+
+
 }

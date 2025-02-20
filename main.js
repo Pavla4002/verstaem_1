@@ -19,23 +19,19 @@ navLinksBox.addEventListener("click", (e)=>{
     }
 })
 
-// Баннер в первой секции
-
+// Баннер в первой секции, автоматическое переключение
 let bannerSlidesCount = document.getElementById('first-section').children[0].childElementCount
 let slides = [];
 let currentSlide = 1;
 function setSlideBanner(){
     if (currentSlide===bannerSlidesCount){
-        currentSlide-=bannerSlidesCount;
-    }
-    console.log(currentSlide)
-    if (currentSlide===1){
+        document.getElementById('slide-' + currentSlide).classList.add('hidden-slide');
+        currentSlide=1
         document.getElementById('slide-' + currentSlide).classList.remove('hidden-slide');
     }else{
+        document.getElementById('slide-' + currentSlide).classList.add('hidden-slide');
+        document.getElementById('slide-' + (currentSlide+1)).classList.remove('hidden-slide');
         currentSlide+=1
-        document.getElementById('slide-' + (currentSlide-1)).classList.add('hidden-slide');
-        document.getElementById('slide-' + currentSlide).classList.remove('hidden-slide');
     }
-
 }
-setInterval(setSlideBanner, 3000, )
+setInterval(setSlideBanner, 3000)
