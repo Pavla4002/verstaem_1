@@ -258,5 +258,44 @@ body {
 #section-3 {
     padding: var(--section-top-s) var(--big-main-space) 0 var(--big-main-space);
 
+    .card-manage {
+        width: 299px;
+    }
+
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section-4 {
+    padding: var(--section-top-s) var(--big-main-space) 0 var(--big-main-space);
+
+
+    & article {
+        width: 100%;
+
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+#section-5 {
+    padding: var(--section-top-s) var(--big-main-space) 0 var(--big-main-space);
+}
+
+#section-6 {
+    padding: var(--section-top-s) var(--big-main-space) 0 var(--big-main-space);
+
+
+    & article {
+        width: 100%;
+
+
+        display: flex;
+        justify-content: space-between;
+    }
 
 }
