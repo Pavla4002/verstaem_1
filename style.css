@@ -242,6 +242,11 @@ body {
         display: none;
     }
 
+    & img {
+      max-width: 390px;
+        max-height: 390px;
+    }
+
 }
 
 #second-section {
