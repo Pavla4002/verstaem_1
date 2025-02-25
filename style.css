@@ -196,7 +196,10 @@ body {
 
 
     & h1 {
-       font-size: 64px; 
+        width: 90%;
+
+
+       font-size: 44px;
 
        & span {
         color: var(--primary-color);
